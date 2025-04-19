@@ -16,7 +16,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <>
+    <React.Fragment>
       {/* Hero Section */}
       <section className="flex flex-col justify-center h-[22vh] items-center  bg-[url(./images/back.jpg)]    p-4">
         <h1 className="text-white tracking-wider  text-6xl font-light">
@@ -32,29 +32,29 @@ function Home() {
 
       {/* Our Team Section */}
       <div className="bg-[url(./images/backn.jpg)]">
-        <section className="px-1 p-4 ml-4 w-3/4 h-[22vh] ">
-          <h2 className="text-orange-500 text-3xl font-bold ">Our team</h2>
+        <section className="px-1 p-4 ml-4 w-1/2 h-[22vh] ">
+          <h2 className="text-orange-500 text-3xl font-light ">Our team</h2>
           <p className="text-white font-sans font-extralight text-[22px]">
-            Benjamin Manjolo founder, is a graphic designer, software engineer
-            and also a photographer who is currently staying in Blantyre.
+            Benjamin Manjolo, the founder, is a graphic designer, software
+            engineer, and photographer currently residing in Blantyre.
           </p>
         </section>
       </div>
       {/* Our Goal Section */}
       <section className="px-3 pl-22 p-4 mr-4 h-[22vh] rounded-l-x  flex flex-col items-end text-right ">
-        <h2 className="text-orange-500 text-3xl font-bold ">Our goal</h2>
+        <h2 className="text-orange-500 text-3xl font-light ">Our goal</h2>
         <p className="text-white  font-sans font-extralight text-[22px] max-w-xs">
-          nzaEazy aims at promoting youths in Malawi to embrace technology and
-          how they can make a good life out of it
+          nzaEazy aims to promote youth in Malawi to embrace technology and
+          explore how they can build a better life through it.
         </p>
       </section>
 
       {/* Join Us Section */}
       <section className="p-4 ml-4  ">
-        <h2 className="text-orange-500 text-3xl font-light ">Hire us</h2>
+        <h2 className="text-orange-500 text-3xl font-light mb-4 ">Hire us</h2>
         <button
           onClick={() => navigate("/message")}
-          className="bg-orange-500 rounded-3xl text-white px-4  uppercase font-light"
+          className="bg-orange-500 rounded-3xl h-[50px] text-white px-4  uppercase font-light"
         >
           Message
         </button>
@@ -66,10 +66,10 @@ function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="flex flex-col text-white p-4">
+      <footer className="  text-white p-4">
         <p className="text-center">&copy; 2025 nzaEazy</p>
       </footer>
-    </>
+    </React.Fragment>
   );
 }
 
@@ -82,7 +82,7 @@ export default function App() {
           <Link to="/" className="text-white">
             Home
           </Link>
-          <div className="flex space-x-4">
+          <div className="flex justify-around space-x-4">
             <Link to="/services" className="text-white hover:underline">
               Services
             </Link>
