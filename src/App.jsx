@@ -18,7 +18,7 @@ function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex flex-col h-auto items-center text-center p-2">
+      <section className="flex flex-col h-[22vh] items-center text-center   shadow shadow-sky-400 p-2">
         <h1 className="text-white tracking-wider  text-6xl font-light">
           nzaEazy
         </h1>
@@ -31,29 +31,29 @@ function Home() {
       </section>
 
       {/* Our Team Section */}
-      <section className="px-1 py-1 w-3/4 rounded-r-x shadow-sm border-white-300 ">
-        <h2 className="text-orange-500 text-3xl font-bold mb-2">Our team</h2>
-        <p className="text-white">
+      <section className="px-1 w-3/4 h-[22vh] shadow-2xl  shadow shadow-sky-900">
+        <h2 className="text-orange-500 text-3xl font-bold ">Our team</h2>
+        <p className="text-white text-[22px]">
           Benjamin Manjolo founder, is a graphic designer, software engineer and
           also a photographer who is currently staying in Blantyre.
         </p>
       </section>
 
       {/* Our Goal Section */}
-      <section className="px-3 pl-22 rounded-l-x shadow-sm py-6 flex flex-col items-end text-right ">
-        <h2 className="text-orange-500 text-3xl font-bold mb-2">Our goal</h2>
-        <p className="text-white max-w-xs">
+      <section className="px-3 pl-22 h-[22vh] rounded-l-x shadow-2xl shadow shadow-sky-900   flex flex-col items-end text-right ">
+        <h2 className="text-orange-500 text-3xl font-bold ">Our goal</h2>
+        <p className="text-white text-[22px] max-w-xs">
           nzaEazy aims at promoting youths in Malawi to embrace technology and
           how they can make a good life out of it
         </p>
       </section>
 
       {/* Join Us Section */}
-      <section className="px-4 py-6">
-        <h2 className="text-orange-500 text-3xl font-bold mb-4">Hire us</h2>
+      <section className="px-4 shadow-2xl border-1 border-b-amber-300 ">
+        <h2 className="text-orange-500 text-3xl font-bold ">Hire us</h2>
         <button
           onClick={() => navigate("/message")}
-          className="bg-orange-500 text-white px-4 py-2 uppercase font-medium"
+          className="bg-orange-500 text-white px-4  uppercase font-medium"
         >
           Message
         </button>
@@ -65,7 +65,7 @@ function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="mt-auto bg-orange-800 text-white p-4">
+      <footer className=" bg-orange-800 text-white p-4">
         <p className="text-center">&copy; 2025 nzaEazy</p>
       </footer>
     </>

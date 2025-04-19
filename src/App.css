@@ -2,4 +2,7 @@
 
 body {
   background-image: url("./images/back.jpg");
+  display: flex;
+  justify-content: space-evenly;
+  height: screen;
 }
