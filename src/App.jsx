@@ -18,11 +18,11 @@ function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex flex-col h-[22vh] items-center text-center   shadow shadow-sky-400 p-2">
+      <section className="flex flex-col justify-center h-[22vh] items-center  bg-[url(./images/back.jpg)]    p-4">
         <h1 className="text-white tracking-wider  text-6xl font-light">
           nzaEazy
         </h1>
-        <h2 className="text-orange-500 tracking-wider text-[14px] font-light ">
+        <h2 className="text-orange-500 tracking-wider text-[14px] font-sans ">
           BETTER IN TECHNOLOGY
         </h2>
         <p className="text-white text-[9px]">
@@ -31,41 +31,42 @@ function Home() {
       </section>
 
       {/* Our Team Section */}
-      <section className="px-1 w-3/4 h-[22vh] shadow-2xl  shadow shadow-sky-900">
-        <h2 className="text-orange-500 text-3xl font-bold ">Our team</h2>
-        <p className="text-white text-[22px]">
-          Benjamin Manjolo founder, is a graphic designer, software engineer and
-          also a photographer who is currently staying in Blantyre.
-        </p>
-      </section>
-
+      <div className="bg-[url(./images/backn.jpg)]">
+        <section className="px-1 p-4 ml-4 w-3/4 h-[22vh] ">
+          <h2 className="text-orange-500 text-3xl font-bold ">Our team</h2>
+          <p className="text-white font-sans font-extralight text-[22px]">
+            Benjamin Manjolo founder, is a graphic designer, software engineer
+            and also a photographer who is currently staying in Blantyre.
+          </p>
+        </section>
+      </div>
       {/* Our Goal Section */}
-      <section className="px-3 pl-22 h-[22vh] rounded-l-x shadow-2xl shadow shadow-sky-900   flex flex-col items-end text-right ">
+      <section className="px-3 pl-22 p-4 mr-4 h-[22vh] rounded-l-x  flex flex-col items-end text-right ">
         <h2 className="text-orange-500 text-3xl font-bold ">Our goal</h2>
-        <p className="text-white text-[22px] max-w-xs">
+        <p className="text-white  font-sans font-extralight text-[22px] max-w-xs">
           nzaEazy aims at promoting youths in Malawi to embrace technology and
           how they can make a good life out of it
         </p>
       </section>
 
       {/* Join Us Section */}
-      <section className="px-4 shadow-2xl border-1 border-b-amber-300 ">
-        <h2 className="text-orange-500 text-3xl font-bold ">Hire us</h2>
+      <section className="p-4 ml-4  ">
+        <h2 className="text-orange-500 text-3xl font-light ">Hire us</h2>
         <button
           onClick={() => navigate("/message")}
-          className="bg-orange-500 text-white px-4  uppercase font-medium"
+          className="bg-orange-500 rounded-3xl text-white px-4  uppercase font-light"
         >
           Message
         </button>
       </section>
 
       {/* Explore Section */}
-      <section className="py-8">
+      <section className="">
         <ImageGallery />
       </section>
 
       {/* Footer */}
-      <footer className=" bg-orange-800 text-white p-4">
+      <footer className="flex flex-col text-white p-4">
         <p className="text-center">&copy; 2025 nzaEazy</p>
       </footer>
     </>
@@ -77,7 +78,7 @@ export default function App() {
     <Router>
       <div className="flex flex-col min-h-screen font-sans">
         {/* Navigation */}
-        <nav className="flex justify-between drop-shadow-sm items-center p-4 bg-orange-400">
+        <nav className="flex justify-between items-center p-4">
           <Link to="/" className="text-white">
             Home
           </Link>
