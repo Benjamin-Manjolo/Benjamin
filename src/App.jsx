@@ -16,7 +16,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <React.Fragment className="bg-[url(./images/back.jpg)] ...">
+    <>
       {/* Hero Section */}
       <section className="flex flex-col h-[22vh] items-center text-center   shadow shadow-sky-400 p-2">
         <h1 className="text-white tracking-wider  text-6xl font-light">
@@ -68,7 +68,7 @@ function Home() {
       <footer className=" bg-orange-800 text-white p-4">
         <p className="text-center">&copy; 2025 nzaEazy</p>
       </footer>
-    </React.Fragment>
+    </>
   );
 }
 
