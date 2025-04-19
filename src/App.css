@@ -2,7 +2,9 @@
 
 body {
   background-image: url("./images/back.jpg");
-  display: flex;
-  justify-content: space-evenly;
-  height: screen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
 }
